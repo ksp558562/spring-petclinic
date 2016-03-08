@@ -10,6 +10,19 @@
     <packaging>war</packaging>
 
     <properties>
+        
+        <distributionManagement>
+    <repository>
+      <id> deployment </id>
+      <name> internal repository  </name>
+      <url>http://localhost:8081/nexus/content/repositories/codehaus-snapshots/</url>
+    </repository>
+    <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/codehaus-snapshots/</url>
+        </snapshotRepository>
+  </distributionManagement>
 
         <!-- Generic properties -->
         <java.version>1.7</java.version>
