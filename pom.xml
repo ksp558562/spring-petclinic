@@ -43,20 +43,7 @@
 
     </properties>
     
-     <distributionManagement>
-            <repository>
-                <id>deployment</id>
-                <name>Internal Releases</name>
-                <url> http://localhost:8081/nexus/content/repositories/releases/</url>
-            </repository>
-            
-      
-    <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-  </distributionManagement>
+     
 
     <dependencyManagement>
         <!-- Import the maven Spring IO Platform Bill Of Materials (BOM) -->
@@ -442,6 +429,19 @@
 		  </build>
 		</profile>
    </profiles>
-
+<distributionManagement>
+            <repository>
+                <id>deployment</id>
+                <name>Internal Releases</name>
+                <url> http://localhost:8081/nexus/content/repositories/releases/</url>
+            </repository>
+            
+      
+    <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+  </distributionManagement>
     <url>demopetclinic</url>
 </project>
